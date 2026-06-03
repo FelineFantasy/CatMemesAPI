@@ -7,7 +7,7 @@ from fastapi.middleware.cors import CORSMiddleware
 
 app = FastAPI(
     title="CatMemeAPI",
-    version="1.1.0",
+    version="1.2.0",
     description="API with memes about cats"
 )
 
@@ -50,7 +50,7 @@ def info():
     """Информация об API."""
     return {
         "title": "CatMemeAPI",
-        "version": "1.1.0",
+        "version": "1.2.0",
         "total_memes": len(memes),
         "formats": ["jpg"],
         "endpoints": {
@@ -101,3 +101,8 @@ def get_meme_by_id(meme_id: int):
             return JSONResponse(status_code=404, content={"error": "File not found"})
 
     return JSONResponse(status_code=404, content={"error": "Meme not found"})
+
+
+@app.get("/health")
+def health():
+    return {"status": "ok"}
