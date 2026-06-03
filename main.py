@@ -3,8 +3,21 @@ import random
 from fastapi import FastAPI, Request
 from fastapi.responses import FileResponse, JSONResponse
 from PIL import Image
+from fastapi.middleware.cors import CORSMiddleware
 
-app = FastAPI(title="CatMemeAPI")
+app = FastAPI(
+    title="CatMemeAPI",
+    version="1.1.0",
+    description="API with memes about cats"
+)
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 MEMES_DIR = "memes"
 
@@ -37,7 +50,7 @@ def info():
     """Информация об API."""
     return {
         "title": "CatMemeAPI",
-        "version": "1.0.0",
+        "version": "1.1.0",
         "total_memes": len(memes),
         "formats": ["jpg"],
         "endpoints": {
