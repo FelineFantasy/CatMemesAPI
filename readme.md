@@ -2,7 +2,14 @@
 
 Random cat memes API. 1000 memes, zero dogs. Built with FastAPI.
 
+**🔗 Live API:** https://catmemeapi.onrender.com
+
+**📖 Interactive Docs:** https://catmemeapi.onrender.com/docs
+
+---
+
 ## ⚠️ WARNING ⚠️
+...
 
 **NEVER open the `memes/` folder in your browser or file explorer!**
 
