@@ -2,6 +2,20 @@
 
 Random cat memes API. 1000 memes, zero dogs. Built with FastAPI.
 
+## ⚠️ WARNING ⚠️
+
+**NEVER open the `memes/` folder in your browser or file explorer!**
+
+- Folder contains **1000+ JPG files** (85 MB total)
+- Your browser **will crash** or freeze for minutes
+- Your file explorer might stop responding
+- **Only access memes through the API endpoints**
+
+✅ **Correct way:** Use `/meme/search?limit=5` or `/meme/{meme_id}`  
+❌ **Wrong way:** Clicking on `memes/` folder in GitHub web interface
+
+*Your RAM will thank you.*
+
 ## 📝 Description
 
 CatMemeAPI returns random cat memes with metadata (width, height). All memes are curated and sorted.
@@ -12,6 +26,7 @@ CatMemeAPI returns random cat memes with metadata (width, height). All memes are
 - 🖼️ Returns image dimensions (width, height)
 - 📦 Single endpoint for random memes
 - ⚡ FastAPI + PIL
+- ⚠️ **Safe API access only** (no browser folder browsing!)
 
 ## ⚙️ Installation
 
