@@ -6,7 +6,7 @@ from PIL import Image
 from fastapi.middleware.cors import CORSMiddleware
 
 app = FastAPI(
-    title="CatMemeAPI",
+    title="CatMemesAPI",
     version="1.2.0",
     description="API with memes about cats"
 )
@@ -49,7 +49,7 @@ memes = load_memes()
 def info():
     """Информация об API."""
     return {
-        "title": "CatMemeAPI",
+        "title": "CatMemesAPI",
         "version": "1.2.0",
         "total_memes": len(memes),
         "formats": ["jpg"],
