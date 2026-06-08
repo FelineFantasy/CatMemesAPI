@@ -57,7 +57,8 @@ def info():
             "/": "API info",
             "/meme/search?limit=5": "Get 5 random memes",
             "/meme/{meme_id}": "Get meme by ID"
-        }
+        },
+        "docs": "https://catmemesapi.onrender.com/docs"
     }
 
 
