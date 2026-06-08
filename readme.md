@@ -1,10 +1,10 @@
-# 🐱 CatMemeAPI
+# 🐱 CatMemesAPI
 
 Random cat memes API. 1000 memes, zero dogs. Built with FastAPI.
 
-**🔗 Live API:** https://catmemeapi.onrender.com
+**🔗 Live API:** https://catmemesapi.onrender.com
 
-**📖 Interactive Docs:** https://catmemeapi.onrender.com/docs
+**📖 Interactive Docs:** https://catmemesapi.onrender.com/docs
 
 ---
 
