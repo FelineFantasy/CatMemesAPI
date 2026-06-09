@@ -62,11 +62,6 @@ def info():
     }
 
 
-@app.head("/")
-def info_head():
-    return Response()
-
-
 @app.get("/meme/search")
 def search_memes(request: Request, limit: int = 1):
     """Возвращает случайные мемы."""
@@ -96,11 +91,6 @@ def search_memes(request: Request, limit: int = 1):
     return result
 
 
-@app.head("/meme/search")
-def search_memes_head():
-    return Response()
-
-
 @app.get("/meme/{meme_id}")
 def get_meme_by_id(meme_id: int):
     """Возвращает мем по ID."""
@@ -114,6 +104,21 @@ def get_meme_by_id(meme_id: int):
     return JSONResponse(status_code=404, content={"error": "Meme not found"})
 
 
+@app.get("/health")
+def health():
+    return {"status": "ok"}
+
+
+@app.head("/")
+def info_head():
+    return Response()
+
+
+@app.head("/meme/search")
+def search_memes_head():
+    return Response()
+
+
 @app.head("/meme/{meme_id}")
 def get_meme_by_id_head(meme_id: int):
     """HEAD-запрос для проверки существования мема."""
@@ -123,11 +128,6 @@ def get_meme_by_id_head(meme_id: int):
             if os.path.exists(filepath):
                 return Response()
     return Response(status_code=404)
-
-
-@app.get("/health")
-def health():
-    return {"status": "ok"}
 
 
 @app.head("/health")
