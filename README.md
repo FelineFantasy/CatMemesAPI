@@ -82,6 +82,21 @@ uvicorn main:app --host 0.0.0.0 --port 8000
 - uvicorn
 - Pillow
 
+## 📁 Project Files
+
+```text
+CatMemesAPI/
+├── .github/
+│   └── FUNDING.yml
+├── memes/
+│   └── (1000+ JPG files)
+├── main.py
+├── requirements.txt
+├── .gitignore
+├── LICENSE
+└── README.md
+```
+
 #### 👤 Author
 
 - **FelineFantasy**
