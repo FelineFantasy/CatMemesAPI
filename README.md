@@ -9,7 +9,6 @@ Random cat memes API. 1000 memes, zero dogs. Built with FastAPI.
 ---
 
 ## ⚠️ WARNING ⚠️
-...
 
 **NEVER open the `memes/` folder in your browser or file explorer!**
 
