@@ -104,8 +104,8 @@ If you enjoy **CatMemesAPI** and want to help keep the project alive, you can su
 [![DonationAlerts](https://img.shields.io/badge/DonationAlerts-Support-blue.svg)](https://www.donationalerts.com/r/FelineFantasy)
 
 Your support helps me:
-- 🐱 Keep developing new features
-- 🛠️ Fix bugs and improve the game
+- 🐱 Keep adding new memes and features
+- 🛠️ Fix bugs and improve API performance
 - ☕ Stay awake while coding at 4 AM
 
 Every little bit is appreciated! ❤️
